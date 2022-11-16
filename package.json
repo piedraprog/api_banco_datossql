@@ -1,0 +1,38 @@
+{
+  "name": "api_banco_datossql",
+  "version": "1.0.0",
+  "description": "api for a technical test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "josepiedra",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "module-alias": "^2.2.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "eslint": "^8.26.0",
+    "nodemon": "^2.0.6"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@routes": "src/routes",
+    "@libs": "src/libs",
+    "@logger": "src/libs/logger",
+    "@controllers": "src/controllers",
+    "@middleware": "src/middleware",
+    "@models": "src/models",
+    "@config": "src/config.js",
+    "@morgan": "src/middleware/morgan.middleware.js"
+  }
+}
