@@ -4,7 +4,9 @@
   "description": "api for a technical test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/server.js --exec babel-node",
+    "build": "babel src --out-dir dist",
+    "start": "node dist/index.js"
   },
   "author": "josepiedra",
   "license": "ISC",
@@ -30,8 +32,6 @@
     "@libs": "src/libs",
     "@logger": "src/libs/logger",
     "@controllers": "src/controllers",
-    "@middleware": "src/middleware",
-    "@models": "src/models",
     "@config": "src/config.js",
     "@morgan": "src/middleware/morgan.middleware.js"
   }
