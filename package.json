@@ -12,10 +12,13 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dayjs": "^1.11.6",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "module-alias": "^2.2.2",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.3",
+    "winston": "^3.8.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.10",
@@ -33,6 +36,7 @@
     "@logger": "src/libs/logger",
     "@controllers": "src/controllers",
     "@config": "src/config.js",
-    "@morgan": "src/middleware/morgan.middleware.js"
+    "@morgan": "src/middleware/morgan.middleware.js",
+    "@database": "src/database.js"
   }
 }
