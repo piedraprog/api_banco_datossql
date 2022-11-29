@@ -31,5 +31,13 @@ app.get('/', (req, res) => {
 // //FUNCTIONAL ROUTES
 app.use('/api', ListRoutes);
 
+// eslint-disable-next-line no-unused-vars
+app.use((req,res,next)=>{
+	res.status(404).json({
+		message:'endpoint not fount'
+	});
+
+});
+
 app.listen(app.get('port'));
 logger.info({message:`server on port, ${app.get('port')}`, file: 'index.js'}); 
