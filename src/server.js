@@ -1,11 +1,11 @@
 //CONFIG OF SERVER
-import 'module-alias/register';
+import 'module-alias/register.js';
 import express from 'express';
-import { morganMiddleware } from '@morgan';
+import { morganMiddleware } from './middleware/morgan.middleware';
 import cors from 'cors';
-import ListRoutes from '@routes/list.routes';
-import config from '@config';
-import { logger }  from '@logger';
+import ListRoutes from './routes/list.routes';
+import config from './config';
+import { logger }  from './libs/logger';
 import './database';
 
 const app = express();

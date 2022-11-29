@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
-import { pool } from '@database';
+import { pool } from '../database';
 import dayjs from 'dayjs';
-import { logger }  from '@logger';
+import { logger }  from '../libs/logger';
 import { numericFormat } from '../libs/formatnumbers';
 
 

@@ -2,11 +2,11 @@
   "name": "api_banco_datossql",
   "version": "1.0.0",
   "description": "api for a technical test",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
     "dev": "nodemon src/server.js --exec babel-node",
     "build": "babel src --out-dir dist",
-    "start": "node dist/server.js"
+    "start": "node ./dist/server.js"
   },
   "author": "josepiedra",
   "license": "ISC",

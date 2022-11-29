@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { getConsultant } from '@controllers/consultant.controller';
+import { getConsultant } from '../controllers/consultant.controller';
 import { generateInform } from '../controllers/consultant.controller';
 
 
