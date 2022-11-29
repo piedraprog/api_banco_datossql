@@ -11,9 +11,9 @@ export const getConsultant = async(req, res) => {
 		SELECT cao_usuario.co_usuario, cao_usuario.no_usuario
 		FROM cao_usuario
 		INNER JOIN permissao_sistema ON cao_usuario.co_usuario = permissao_sistema.co_usuario
-		WHERE permissao_sistema.co_tipo_usuario = 0 || 1 || 2
-				&& permissao_sistema.co_sistema = 1 
-				&& permissao_sistema.in_ativo = 'S'`);
+		WHERE permissao_sistema.co_tipo_usuario = 0 OR 1 OR 2
+				AND permissao_sistema.co_sistema = 1 
+				AND permissao_sistema.in_ativo = 'S'`);
 
 
 		res.status(200).json({
